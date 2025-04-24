@@ -1,0 +1,111 @@
+.formPesquisa input:focus + ul,
+.formPesquisa ul:hover {
+  display: block !important;
+
+  max-height: 250px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.formPesquisa ul li {
+  font-size: 20px;
+  padding: 5px 15px;
+}
+.formPesquisa ul li:hover {
+  background-color: rgb(0, 92, 255);
+  color: #dddddd;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: max-content !important;
+  padding-bottom: 64px !important;
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+  position: relative;
+}
+
+.swiper-pagination-bullet {
+  background: #4f46e5;
+}
+
+.swiper-pagination-bullet-active {
+  background: #4f46e5 !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: none;
+}
+
+@media (max-width: 767px) {
+  .swiper-slide {
+    width: 175px !important;
+    height: 365px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .swiper-slide {
+    width: 240px !important;
+    height: 410px !important;
+  }
+
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 110px;
+  }
+  footer ul li {
+    border-bottom: none !important;
+    padding: 0 !important;
+  }
+
+  footer ul:first-child {
+    border-top: none !important;
+  }
+}
+@media (max-width: 768px) {
+  #slider-button-left,
+  #slider-button-right {
+    display: none;
+  }
+}
+
+footer ul li {
+  border-bottom: 1px solid #dddddd;
+  padding: 16px;
+}
+
+@media (min-width: 768px) {
+}
+
+footer ul li div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+footer ul:first-child {
+  border-top: 1px solid #dddddd;
+}
+
+footer ul p {
+  color: #5f5f5f;
+  font-size: 12px;
+}
+
+footer ul li h5 {
+  font-weight: bold;
+  color: black;
+}
+
+footer ul li img {
+  width: 12px;
+  height: 7.5px;
+}
+
+footer summary {
+  list-style-type: none;
+}

@@ -1,0 +1,2325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CDN SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="./styles/style.css" type="text/css" />
+  </head>
+  <body
+    class="font-['Nunito_Sans'] text-[14px] flex items-center flex-col w-full"
+  >
+    <script type="text/javascript" src="./js/script.js"></script>
+
+    <header
+      class="fixed top-0 w-full z-[100] bg-white flex flex-col items-center"
+    >
+      <div class="bg-[#005CFF] w-full">
+        <h3 class="text-white font-bold text-center text-[14px]">
+          Ganhe <span class="bg-[#6220C1] px-2">R$10,00</span> de desconto no
+          seu primeiro pedido. Utilize o cupom
+          <span class="font-normal">DESCONTO10</span>
+        </h3>
+      </div>
+
+      <div class="md:hidden w-full">
+        <div class="flex justify-between py-[16px] px-[16px]">
+          <span>
+            <svg
+              width="24"
+              height="25"
+              viewBox="0 0 24 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="1"
+                y1="12.4998"
+                x2="22.7185"
+                y2="12.4998"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <line
+                x1="1"
+                y1="23.1921"
+                x2="22.7185"
+                y2="23.1921"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <line
+                x1="1"
+                y1="1.80762"
+                x2="22.7185"
+                y2="1.80762"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </span>
+          <span>
+            <img src="./images/logo-avanti.png" />
+          </span>
+          <span class="relative">
+            <svg
+              width="26"
+              height="25"
+              viewBox="0 0 26 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.75642 24.7675C8.36104 24.6283 7.92918 24.55 7.57639 24.3395C5.88812 23.3319 5.85575 20.9008 7.50255 19.8221C7.67022 19.7123 7.70117 19.6238 7.6492 19.4348C6.49361 15.2308 5.34101 11.0259 4.19813 6.81838C3.76549 5.22546 3.35857 3.62554 2.93947 2.02895C2.91923 1.95179 2.89459 1.87581 2.86804 1.78584H0.0527344V0.612305H3.42664C3.72217 0.716602 3.86573 0.930918 3.94186 1.23276C4.1485 2.05237 4.37905 2.86597 4.60031 3.68187C4.79977 4.41748 4.99941 5.15304 5.20268 5.90219H5.53278C11.7867 5.90219 18.0407 5.9038 24.2946 5.89808C24.6545 5.89779 24.9296 5.99441 25.0881 6.33327V6.67555C25.0582 6.74855 25.0199 6.81926 24.9997 6.89485C24.1788 9.95107 23.3593 13.0076 22.5402 16.0644C22.2179 17.2672 21.3659 17.9232 20.1192 17.9234C16.4602 17.9238 12.8012 17.9241 9.14217 17.922C8.9258 17.9218 8.70943 17.8995 8.47698 17.8866C8.58641 18.2858 8.70987 18.6662 8.79036 19.0556C8.8396 19.2939 8.94179 19.355 9.17836 19.3545C12.8537 19.3466 16.529 19.3467 20.2044 19.3501C21.6302 19.3514 22.7592 20.3824 22.9225 21.8171C23.0721 23.1333 22.1458 24.3881 20.7987 24.693C20.6805 24.7197 20.5615 24.7427 20.4428 24.7675H20.0517C19.9968 24.7532 19.9428 24.7334 19.8871 24.7255C17.9765 24.4529 16.9651 22.4088 17.9065 20.7217C17.94 20.6618 17.9696 20.5997 18.0052 20.5305H11.2094C11.2671 20.6365 11.3143 20.7204 11.359 20.8055C12.1216 22.2596 11.4259 24.0484 9.87905 24.5949C9.65872 24.6727 9.42436 24.7109 9.1965 24.7675H8.75642ZM23.7298 7.08633H5.49489C5.51542 7.17806 5.5296 7.25669 5.55073 7.33341C6.32716 10.1565 7.10478 12.9793 7.88082 15.8025C8.07661 16.5148 8.45976 16.8094 9.20447 16.8095C12.822 16.8097 16.4394 16.8097 20.0569 16.8095C20.8538 16.8095 21.2178 16.5275 21.4211 15.7629C21.9833 13.6485 22.5475 11.5346 23.1105 9.42029C23.3152 8.65158 23.5186 7.88257 23.7298 7.08633ZM20.2545 23.603C21.107 23.5993 21.7911 22.9152 21.7939 22.0636C21.7966 21.2095 21.0925 20.5095 20.2352 20.514C19.3902 20.5184 18.6967 21.2135 18.6946 22.0582C18.6925 22.9156 19.3904 23.6067 20.2545 23.603ZM8.96609 23.6032C9.82101 23.6065 10.5105 22.9315 10.5187 22.0833C10.527 21.2188 9.84243 20.5172 8.98736 20.514C8.13763 20.5107 7.44217 21.1938 7.43488 22.0389C7.4274 22.9087 8.10389 23.5999 8.96609 23.6032Z"
+                fill="black"
+              />
+            </svg>
+            <svg
+              width="21"
+              height="21"
+              viewBox="0 0 21 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute -right-2 -top-2"
+            >
+              <ellipse
+                cx="10.5"
+                cy="10.4997"
+                rx="10.5"
+                ry="10.4997"
+                fill="#005CFF"
+              />
+              <path
+                d="M13.036 12.98C13.228 12.98 13.372 13.024 13.468 13.112C13.572 13.2 13.624 13.324 13.624 13.484C13.624 13.828 13.428 14 13.036 14H8.40403C8.22803 14 8.08803 13.952 7.98403 13.856C7.88803 13.752 7.84003 13.624 7.84003 13.472C7.84003 13.288 7.91203 13.12 8.05603 12.968L10.876 9.88404C11.252 9.47604 11.524 9.10404 11.692 8.76804C11.86 8.43204 11.944 8.10004 11.944 7.77204C11.944 7.34804 11.82 7.02404 11.572 6.80004C11.332 6.56804 10.988 6.45204 10.54 6.45204C9.86003 6.45204 9.18403 6.71204 8.51203 7.23204C8.42403 7.28804 8.34803 7.33204 8.28403 7.36404C8.22803 7.38804 8.16803 7.40004 8.10403 7.40004C7.99203 7.40004 7.89603 7.34804 7.81603 7.24404C7.73603 7.14004 7.69603 7.01604 7.69603 6.87204C7.69603 6.67204 7.77603 6.51204 7.93603 6.39204C8.27203 6.10404 8.67603 5.87604 9.14803 5.70804C9.62003 5.53204 10.096 5.44404 10.576 5.44404C11.368 5.44404 11.996 5.64804 12.46 6.05604C12.932 6.45604 13.168 7.00004 13.168 7.68804C13.168 8.17604 13.06 8.64004 12.844 9.08004C12.636 9.52004 12.284 10.012 11.788 10.556L9.52003 12.98H13.036Z"
+                fill="white"
+              />
+            </svg>
+          </span>
+        </div>
+
+        <div class="py-[16px] px-[16px]">
+          <input
+            type="text"
+            placeholder="Digite aqui o que você procura"
+            class="border-[#DDDDDD] border rounded-md w-full px-[16px] py-[8px] placeholder-black font-semibold"
+          />
+        </div>
+      </div>
+      <div class="w-[1260px] hidden md:block">
+        <div class="flex justify-between items-center py-[16px] px-[16px]">
+          <span class="flex flex-row items-center">
+            <img
+              src="./images/logo-avanti.png"
+              class="w-[152px] h-[27px] mr-[65px]"
+            />
+            <form action="#" onsubmit="pesquisar()" class="formPesquisa">
+              <input
+                type="text"
+                id="pesquisa"
+                placeholder="Digite aqui o que você procura"
+                class="border-[#DDDDDD] border rounded-md w-[595px] px-[16px] py-[8px] placeholder-black font-semibold"
+                autocomplete="off"
+              />
+              <ul
+                id="historicoPesquisa"
+                class="listaHistoricoPesquisa fixed bg-white w-[595px] hidden z-10"
+              ></ul>
+            </form>
+          </span>
+
+          <span class="flex flex-row items center">
+            <div class="flex flex-row">
+              <img
+                src="./icons/icon-perfil.png"
+                class="w-[20.5px] h-[24px] mr-[8px]"
+              />
+              <p class="font-bold w-[87px] text-[14px] leading-[100%]">
+                Olá, Nome cliente!
+              </p>
+            </div>
+            <div class="relative">
+              <svg
+                width="26"
+                height="25"
+                viewBox="0 0 26 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.75642 24.7675C8.36104 24.6283 7.92918 24.55 7.57639 24.3395C5.88812 23.3319 5.85575 20.9008 7.50255 19.8221C7.67022 19.7123 7.70117 19.6238 7.6492 19.4348C6.49361 15.2308 5.34101 11.0259 4.19813 6.81838C3.76549 5.22546 3.35857 3.62554 2.93947 2.02895C2.91923 1.95179 2.89459 1.87581 2.86804 1.78584H0.0527344V0.612305H3.42664C3.72217 0.716602 3.86573 0.930918 3.94186 1.23276C4.1485 2.05237 4.37905 2.86597 4.60031 3.68187C4.79977 4.41748 4.99941 5.15304 5.20268 5.90219H5.53278C11.7867 5.90219 18.0407 5.9038 24.2946 5.89808C24.6545 5.89779 24.9296 5.99441 25.0881 6.33327V6.67555C25.0582 6.74855 25.0199 6.81926 24.9997 6.89485C24.1788 9.95107 23.3593 13.0076 22.5402 16.0644C22.2179 17.2672 21.3659 17.9232 20.1192 17.9234C16.4602 17.9238 12.8012 17.9241 9.14217 17.922C8.9258 17.9218 8.70943 17.8995 8.47698 17.8866C8.58641 18.2858 8.70987 18.6662 8.79036 19.0556C8.8396 19.2939 8.94179 19.355 9.17836 19.3545C12.8537 19.3466 16.529 19.3467 20.2044 19.3501C21.6302 19.3514 22.7592 20.3824 22.9225 21.8171C23.0721 23.1333 22.1458 24.3881 20.7987 24.693C20.6805 24.7197 20.5615 24.7427 20.4428 24.7675H20.0517C19.9968 24.7532 19.9428 24.7334 19.8871 24.7255C17.9765 24.4529 16.9651 22.4088 17.9065 20.7217C17.94 20.6618 17.9696 20.5997 18.0052 20.5305H11.2094C11.2671 20.6365 11.3143 20.7204 11.359 20.8055C12.1216 22.2596 11.4259 24.0484 9.87905 24.5949C9.65872 24.6727 9.42436 24.7109 9.1965 24.7675H8.75642ZM23.7298 7.08633H5.49489C5.51542 7.17806 5.5296 7.25669 5.55073 7.33341C6.32716 10.1565 7.10478 12.9793 7.88082 15.8025C8.07661 16.5148 8.45976 16.8094 9.20447 16.8095C12.822 16.8097 16.4394 16.8097 20.0569 16.8095C20.8538 16.8095 21.2178 16.5275 21.4211 15.7629C21.9833 13.6485 22.5475 11.5346 23.1105 9.42029C23.3152 8.65158 23.5186 7.88257 23.7298 7.08633ZM20.2545 23.603C21.107 23.5993 21.7911 22.9152 21.7939 22.0636C21.7966 21.2095 21.0925 20.5095 20.2352 20.514C19.3902 20.5184 18.6967 21.2135 18.6946 22.0582C18.6925 22.9156 19.3904 23.6067 20.2545 23.603ZM8.96609 23.6032C9.82101 23.6065 10.5105 22.9315 10.5187 22.0833C10.527 21.2188 9.84243 20.5172 8.98736 20.514C8.13763 20.5107 7.44217 21.1938 7.43488 22.0389C7.4274 22.9087 8.10389 23.5999 8.96609 23.6032Z"
+                  fill="black"
+                />
+              </svg>
+              <svg
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="absolute -right-2 -top-2"
+              >
+                <ellipse
+                  cx="10.5"
+                  cy="10.4997"
+                  rx="10.5"
+                  ry="10.4997"
+                  fill="#005CFF"
+                />
+                <path
+                  d="M13.036 12.98C13.228 12.98 13.372 13.024 13.468 13.112C13.572 13.2 13.624 13.324 13.624 13.484C13.624 13.828 13.428 14 13.036 14H8.40403C8.22803 14 8.08803 13.952 7.98403 13.856C7.88803 13.752 7.84003 13.624 7.84003 13.472C7.84003 13.288 7.91203 13.12 8.05603 12.968L10.876 9.88404C11.252 9.47604 11.524 9.10404 11.692 8.76804C11.86 8.43204 11.944 8.10004 11.944 7.77204C11.944 7.34804 11.82 7.02404 11.572 6.80004C11.332 6.56804 10.988 6.45204 10.54 6.45204C9.86003 6.45204 9.18403 6.71204 8.51203 7.23204C8.42403 7.28804 8.34803 7.33204 8.28403 7.36404C8.22803 7.38804 8.16803 7.40004 8.10403 7.40004C7.99203 7.40004 7.89603 7.34804 7.81603 7.24404C7.73603 7.14004 7.69603 7.01604 7.69603 6.87204C7.69603 6.67204 7.77603 6.51204 7.93603 6.39204C8.27203 6.10404 8.67603 5.87604 9.14803 5.70804C9.62003 5.53204 10.096 5.44404 10.576 5.44404C11.368 5.44404 11.996 5.64804 12.46 6.05604C12.932 6.45604 13.168 7.00004 13.168 7.68804C13.168 8.17604 13.06 8.64004 12.844 9.08004C12.636 9.52004 12.284 10.012 11.788 10.556L9.52003 12.98H13.036Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </span>
+        </div>
+
+        <div class="bg-white">
+          <div
+            class="flex items-center px-4 py-2 gap-6 max-w-screen-xl mx-auto"
+          >
+            <!-- Botão: Todas as Categorias -->
+            <div class="relative">
+              <button
+                class="flex items-center gap-2 text-blue-600 font-semibold peer"
+              >
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+                Todas as Categorias
+              </button>
+
+              <!-- Mega Menu -->
+              <div
+                class="absolute left-0 bg-white border rounded shadow-lg w-[1150px] z-50 invisible opacity-0 peer-hover:visible peer-hover:opacity-100 hover:visible hover:opacity-100 transition-opacity duration-200 flex"
+              >
+                <!-- Coluna: Departamentos -->
+                <div class="w-56 border-r p-4">
+                  <h4 class="font-semibold text-sm text-blue-600 mb-2">
+                    Departamento
+                  </h4>
+                  <ul class="space-y-2 text-sm text-gray-700">
+                    <li
+                      class="flex justify-between items-center hover:text-blue-600 cursor-pointer"
+                    >
+                      Departamento <span>&gt;</span>
+                    </li>
+                    <li
+                      class="flex justify-between items-center hover:text-blue-600 cursor-pointer"
+                    >
+                      Departamento <span>&gt;</span>
+                    </li>
+                    <li
+                      class="flex justify-between items-center hover:text-blue-600 cursor-pointer"
+                    >
+                      Departamento <span>&gt;</span>
+                    </li>
+                    <li
+                      class="flex justify-between items-center hover:text-blue-600 cursor-pointer"
+                    >
+                      Departamento <span>&gt;</span>
+                    </li>
+                    <li
+                      class="flex justify-between items-center hover:text-blue-600 cursor-pointer"
+                    >
+                      Departamento <span>&gt;</span>
+                    </li>
+                    <li
+                      class="flex justify-between items-center hover:text-blue-600 cursor-pointer"
+                    >
+                      Departamento <span>&gt;</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Colunas: Categorias -->
+                <div class="flex-1 grid grid-cols-3 gap-6 p-4">
+                  <!-- Coluna 1 -->
+                  <div>
+                    <h5 class="font-semibold text-blue-600 text-sm mb-2">
+                      Categoria
+                    </h5>
+                    <ul class="space-y-1 text-sm text-gray-700">
+                      <li class="hover:text-blue-600 cursor-pointer">
+                        Categoria
+                      </li>
+                      <li class="hover:text-blue-600 cursor-pointer">
+                        Categoria
+                      </li>
+                      <li class="hover:text-blue-600 cursor-pointer">
+                        Categoria
+                      </li>
+                      <li class="hover:text-blue-600 cursor-pointer">
+                        Categoria
+                      </li>
+                      <li class="hover:text-blue-600 cursor-pointer">
+                        Categoria
+                      </li>
+                      <li class="hover:text-blue-600 cursor-pointer">
+                        Categoria
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Coluna 2 -->
+                  <div>
+                    <h5 class="font-semibold text-blue-600 text-sm mb-2">
+                      Categoria
+                    </h5>
+                    <ul class="space-y-1 text-sm text-gray-700">
+                      <li class="hover:text-blue-600 cursor-pointer">
+                        Categoria
+                      </li>
+                      <li class="hover:text-blue-600 cursor-pointer">
+                        Categoria
+                      </li>
+                      <li class="hover:text-blue-600 cursor-pointer">
+                        Categoria
+                      </li>
+                      <li class="hover:text-blue-600 cursor-pointer">
+                        Categoria
+                      </li>
+                      <li class="hover:text-blue-600 cursor-pointer">
+                        Categoria
+                      </li>
+                      <li class="hover:text-blue-600 cursor-pointer">
+                        Categoria
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Coluna 3 -->
+                  <div>
+                    <h5 class="font-semibold text-blue-600 text-sm mb-2">
+                      Categoria
+                    </h5>
+                    <ul class="space-y-1 text-sm text-gray-700">
+                      <li class="hover:text-blue-600 cursor-pointer">
+                        Categoria
+                      </li>
+                      <li class="hover:text-blue-600 cursor-pointer">
+                        Categoria
+                      </li>
+                      <li class="hover:text-blue-600 cursor-pointer">
+                        Categoria
+                      </li>
+                      <li class="hover:text-blue-600 cursor-pointer">
+                        Categoria
+                      </li>
+                      <li class="hover:text-blue-600 cursor-pointer">
+                        Categoria
+                      </li>
+                      <li class="hover:text-blue-600 cursor-pointer">
+                        Categoria
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Banner lateral -->
+                <div class="w-[236px] h-[298px] p-4">
+                  <div
+                    class="relative h-full rounded-lg overflow-hidden shadow"
+                  >
+                    <img
+                      src="./images/image-capa-menu.png"
+                      alt="Banner"
+                      class="w-full h-full object-cover"
+                    />
+                    <div
+                      class="absolute inset-0 bg-black/50 p-4 text-white flex flex-col justify-center"
+                    >
+                      <h3 class="text-[24px] font-normal leading-tight">
+                        Confira os <br />Produtos <br /><strong
+                          >Que<br />
+                          acabaram<br />De chegar</strong
+                        >
+                      </h3>
+                      <button
+                        class="mt-2 bg-transparent border border-[#ffffff] text-[#ffffff] text-sm px-3 py-1 rounded w-fit"
+                      >
+                        VER TODOS
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Outros departamentos no topo -->
+            <nav class="flex items-center gap-6 text-sm text-gray-700">
+              <!-- Menu suspenso ao passar o mouse no primeiro Departamento -->
+              <div class="relative">
+                <span class="hover:text-blue-600 cursor-pointer peer"
+                  >Departamento</span
+                >
+
+                <!-- Mega Menu para o Departamento -->
+                <div
+                  class="absolute left-0 top-full bg-white border rounded shadow-lg w-[1150px] z-50 invisible opacity-0 peer-hover:visible peer-hover:opacity-100 hover:visible hover:opacity-100 transition-opacity duration-200 flex"
+                >
+                  <!-- Coluna: Departamentos -->
+                  <div class="w-56 border-r p-4">
+                    <h4 class="font-semibold text-sm text-blue-600 mb-2">
+                      Departamento
+                    </h4>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                      <li
+                        class="flex justify-between items-center hover:text-blue-600 cursor-pointer"
+                      >
+                        Departamento <span>&gt;</span>
+                      </li>
+                      <li
+                        class="flex justify-between items-center hover:text-blue-600 cursor-pointer"
+                      >
+                        Departamento <span>&gt;</span>
+                      </li>
+                      <li
+                        class="flex justify-between items-center hover:text-blue-600 cursor-pointer"
+                      >
+                        Departamento <span>&gt;</span>
+                      </li>
+                      <li
+                        class="flex justify-between items-center hover:text-blue-600 cursor-pointer"
+                      >
+                        Departamento <span>&gt;</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- Colunas: Categorias -->
+                  <div class="flex-1 grid grid-cols-3 gap-6 p-4">
+                    <div>
+                      <h5 class="font-semibold text-blue-600 text-sm mb-2">
+                        Categoria
+                      </h5>
+                      <ul class="space-y-1 text-sm text-gray-700">
+                        <li class="hover:text-blue-600 cursor-pointer">
+                          Categoria
+                        </li>
+                        <li class="hover:text-blue-600 cursor-pointer">
+                          Categoria
+                        </li>
+                        <li class="hover:text-blue-600 cursor-pointer">
+                          Categoria
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h5 class="font-semibold text-blue-600 text-sm mb-2">
+                        Categoria
+                      </h5>
+                      <ul class="space-y-1 text-sm text-gray-700">
+                        <li class="hover:text-blue-600 cursor-pointer">
+                          Categoria
+                        </li>
+                        <li class="hover:text-blue-600 cursor-pointer">
+                          Categoria
+                        </li>
+                        <li class="hover:text-blue-600 cursor-pointer">
+                          Categoria
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h5 class="font-semibold text-blue-600 text-sm mb-2">
+                        Categoria
+                      </h5>
+                      <ul class="space-y-1 text-sm text-gray-700">
+                        <li class="hover:text-blue-600 cursor-pointer">
+                          Categoria
+                        </li>
+                        <li class="hover:text-blue-600 cursor-pointer">
+                          Categoria
+                        </li>
+                        <li class="hover:text-blue-600 cursor-pointer">
+                          Categoria
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- Banner lateral -->
+                  <div class="w-[236px] h-[298px] p-4">
+                    <div
+                      class="relative h-full rounded-lg overflow-hidden shadow"
+                    >
+                      <img
+                        src="./images/image-capa-menu.png"
+                        alt="Banner"
+                        class="w-full h-full object-cover"
+                      />
+                      <div
+                        class="absolute inset-0 bg-black/50 p-4 text-white flex flex-col justify-center"
+                      >
+                        <h3 class="text-[24px] font-normal leading-tight">
+                          Confira os <br />Produtos <br /><strong
+                            >Que<br />
+                            acabaram<br />De chegar</strong
+                          >
+                        </h3>
+                        <button
+                          class="mt-2 bg-transparent border border-[#ffffff] text-[#ffffff] text-sm px-3 py-1 rounded w-fit"
+                        >
+                          VER TODOS
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <span class="hover:text-blue-600 cursor-pointer"
+                >Departamento</span
+              >
+              <span class="hover:text-blue-600 cursor-pointer"
+                >Departamento</span
+              >
+              <span class="hover:text-blue-600 cursor-pointer"
+                >Departamento</span
+              >
+              <span class="hover:text-blue-600 cursor-pointer"
+                >Departamento</span
+              >
+              <span class="hover:text-blue-600 cursor-pointer"
+                >Departamento</span
+              >
+              <span class="hover:text-blue-600 cursor-pointer"
+                >Departamento</span
+              >
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="font-['Nunito'] grid gap-[56px] mt-[172px] place-items-center">
+      <!-- corpo da página -->
+      <div
+        class="w-full bg-[#E7E7EA] flex flex-row items-center justify-center overflow-hidden"
+      >
+        <img
+          src="./images/imagem-destaque.jpeg"
+          class="w-[225px] md:w-[685px] h-[306px] md:h-[510px] object-cover scale-[140%] md:scale-[100%] z-0"
+        />
+
+        <div
+          class="w-[139px] h-[164px] md:w-[600px] md:h-[225px] font-['Nunito'] text-center z-10"
+        >
+          <p class="md:hidden text-[40px] md:text-[100px] leading-[100%]">
+            <strong>SUPER</strong> SALE
+          </p>
+          <p class="hidden md:block text-[40px] md:text-[100px] leading-[100%]">
+            <strong>SUPER</strong>SALE
+          </p>
+          <p class="text-[12px] md:text-[25px] tracking-[0.3em] text-[#005CFF]">
+            <strong>ITENS SELECIONADOS COM ATÉ</strong>
+          </p>
+          <p class="text-[32px] md:text-[60px] text-[#005CFF]">
+            <strong>50%OFF</strong>
+          </p>
+        </div>
+      </div>
+
+      <div class="w-full px-[16px] md:w-[1290px] overflow-hidden">
+        <div class="flex flex-row justify-between">
+          <h2 class="text-[16px] font-bold">Lançamentos</h2>
+          <a class="text-[14px] font-bold underline text-[#303030]">Ver mais</a>
+        </div>
+        <div
+          class="swiper centered-slide-carousel swiper-container relative mt-[16px]"
+        >
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide border-[#dddddd] pt-[6px] px-[8px] rounded-[10px] border-[2px] flex flex-col"
+            >
+              <span class="relative">
+                <h4
+                  class="text-[10px] absolute left-[0px] top-[0px] bg-[#00264E] leading-[22px] px-[6px] py-[1px] rounded-[4px] text-white"
+                >
+                  NOVO
+                </h4>
+                <img
+                  class="w-[158px] h-[158px] md:w-[222px] md:h-[222px]"
+                  src="./images/image-produto.png"
+                />
+              </span>
+              <div class="mt-[16px] text-[#303030] w-[100%] h-[101px]">
+                <h3 class="text-[14px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+                <div class="">
+                  <div class="flex flex-row items-center h-[38px]">
+                    <span>
+                      <h5 class="text-[12px] line-through">R$ 100,00</h5>
+                      <h2 class="text-[16px] font-bold font-black">R$79,99</h2>
+                    </span>
+                    <span
+                      class="bg-[#5EC0BE] px-[8px] py-[2px] h-max rounded-[4px] ml-[8px]"
+                    >
+                      <h6 class="text-[11px] text-white underline">10% OFF</h6>
+                    </span>
+                  </div>
+                  <p class="text-[12px]">
+                    Ou em até <span class="font-bold">10x de R$ 7,90</span>
+                  </p>
+                </div>
+                <button
+                  class="bg-[#005CFF] w-[100%] mt-[16px] py-[10px] px-[24px] text-white rounded-[8px] font-semibold text-[14px]"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+            <div
+              class="swiper-slide border-[#dddddd] pt-[6px] px-[8px] rounded-[10px] border-[2px] flex flex-col"
+            >
+              <span class="relative">
+                <h4
+                  class="text-[10px] absolute left-[8px] top-[8px] bg-[#00264E] leading-[22px] px-[6px] py-[1px] rounded-[4px] text-white"
+                >
+                  NOVO
+                </h4>
+                <img
+                  class="w-[158px] h-[158px] md:w-[222px] md:h-[222px]"
+                  src="./images/image-produto.png"
+                />
+              </span>
+              <div class="mt-[16px] text-[#303030] w-[100%] h-[101px]">
+                <h3 class="text-[14px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+                <div class="">
+                  <div class="flex flex-row items-center h-[38px]">
+                    <span>
+                      <h5 class="text-[12px] line-through">R$ 100,00</h5>
+                      <h2 class="text-[16px] font-bold font-black">R$79,99</h2>
+                    </span>
+                    <span
+                      class="bg-[#5EC0BE] px-[8px] py-[2px] h-max rounded-[4px] ml-[8px]"
+                    >
+                      <h6 class="text-[11px] text-white underline">10% OFF</h6>
+                    </span>
+                  </div>
+                  <p class="text-[12px]">
+                    Ou em até <span class="font-bold">10x de R$ 7,90</span>
+                  </p>
+                </div>
+                <button
+                  class="bg-[#005CFF] w-[100%] mt-[16px] py-[10px] px-[24px] text-white rounded-[8px] font-semibold text-[14px]"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+            <div
+              class="swiper-slide border-[#dddddd] pt-[6px] px-[8px] rounded-[10px] border-[2px] flex flex-col"
+            >
+              <span class="relative">
+                <h4
+                  class="text-[10px] absolute left-[8px] top-[8px] bg-[#00264E] leading-[22px] px-[6px] py-[1px] rounded-[4px] text-white"
+                >
+                  NOVO
+                </h4>
+                <img
+                  class="w-[158px] h-[158px] md:w-[222px] md:h-[222px]"
+                  src="./images/image-produto.png"
+                />
+              </span>
+              <div class="mt-[16px] text-[#303030] w-[100%] h-[101px]">
+                <h3 class="text-[14px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+                <div class="">
+                  <div class="flex flex-row items-center h-[38px]">
+                    <span>
+                      <h5 class="text-[12px] line-through">R$ 100,00</h5>
+                      <h2 class="text-[16px] font-bold font-black">R$79,99</h2>
+                    </span>
+                    <span
+                      class="bg-[#5EC0BE] px-[8px] py-[2px] h-max rounded-[4px] ml-[8px]"
+                    >
+                      <h6 class="text-[11px] text-white underline">10% OFF</h6>
+                    </span>
+                  </div>
+                  <p class="text-[12px]">
+                    Ou em até <span class="font-bold">10x de R$ 7,90</span>
+                  </p>
+                </div>
+                <button
+                  class="bg-[#005CFF] w-[100%] mt-[16px] py-[10px] px-[24px] text-white rounded-[8px] font-semibold text-[14px]"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+            <div
+              class="swiper-slide border-[#dddddd] pt-[6px] px-[8px] rounded-[10px] border-[2px] flex flex-col"
+            >
+              <span class="relative">
+                <h4
+                  class="text-[10px] absolute left-[8px] top-[8px] bg-[#00264E] leading-[22px] px-[6px] py-[1px] rounded-[4px] text-white"
+                >
+                  NOVO
+                </h4>
+                <img
+                  class="w-[158px] h-[158px] md:w-[222px] md:h-[222px]"
+                  src="./images/image-produto.png"
+                />
+              </span>
+              <div class="mt-[16px] text-[#303030] w-[100%] h-[101px]">
+                <h3 class="text-[14px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+                <div class="">
+                  <div class="flex flex-row items-center h-[38px]">
+                    <span>
+                      <h5 class="text-[12px] line-through">R$ 100,00</h5>
+                      <h2 class="text-[16px] font-bold font-black">R$79,99</h2>
+                    </span>
+                    <span
+                      class="bg-[#5EC0BE] px-[8px] py-[2px] h-max rounded-[4px] ml-[8px]"
+                    >
+                      <h6 class="text-[11px] text-white underline">10% OFF</h6>
+                    </span>
+                  </div>
+                  <p class="text-[12px]">
+                    Ou em até <span class="font-bold">10x de R$ 7,90</span>
+                  </p>
+                </div>
+                <button
+                  class="bg-[#005CFF] w-[100%] mt-[16px] py-[10px] px-[24px] text-white rounded-[8px] font-semibold text-[14px]"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+            <div
+              class="swiper-slide border-[#dddddd] pt-[6px] px-[8px] rounded-[10px] border-[2px] flex flex-col"
+            >
+              <span class="relative">
+                <h4
+                  class="text-[10px] absolute left-[8px] top-[8px] bg-[#00264E] leading-[22px] px-[6px] py-[1px] rounded-[4px] text-white"
+                >
+                  NOVO
+                </h4>
+                <img
+                  class="w-[158px] h-[158px] md:w-[222px] md:h-[222px]"
+                  src="./images/image-produto.png"
+                />
+              </span>
+              <div class="mt-[16px] text-[#303030] w-[100%] h-[101px]">
+                <h3 class="text-[14px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+                <div class="">
+                  <div class="flex flex-row items-center h-[38px]">
+                    <span>
+                      <h5 class="text-[12px] line-through">R$ 100,00</h5>
+                      <h2 class="text-[16px] font-bold font-black">R$79,99</h2>
+                    </span>
+                    <span
+                      class="bg-[#5EC0BE] px-[8px] py-[2px] h-max rounded-[4px] ml-[8px]"
+                    >
+                      <h6 class="text-[11px] text-white underline">10% OFF</h6>
+                    </span>
+                  </div>
+                  <p class="text-[12px]">
+                    Ou em até <span class="font-bold">10x de R$ 7,90</span>
+                  </p>
+                </div>
+                <button
+                  class="bg-[#005CFF] w-[100%] mt-[16px] py-[10px] px-[24px] text-white rounded-[8px] font-semibold text-[14px]"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+            <div
+              class="swiper-slide border-[#dddddd] pt-[6px] px-[8px] rounded-[10px] border-[2px] flex flex-col"
+            >
+              <span class="relative">
+                <h4
+                  class="text-[10px] absolute left-[8px] top-[8px] bg-[#00264E] leading-[22px] px-[6px] py-[1px] rounded-[4px] text-white"
+                >
+                  NOVO
+                </h4>
+                <img
+                  class="w-[158px] h-[158px] md:w-[222px] md:h-[222px]"
+                  src="./images/image-produto.png"
+                />
+              </span>
+              <div class="mt-[16px] text-[#303030] w-[100%] h-[101px]">
+                <h3 class="text-[14px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+                <div class="">
+                  <div class="flex flex-row items-center h-[38px]">
+                    <span>
+                      <h5 class="text-[12px] line-through">R$ 100,00</h5>
+                      <h2 class="text-[16px] font-bold font-black">R$79,99</h2>
+                    </span>
+                    <span
+                      class="bg-[#5EC0BE] px-[8px] py-[2px] h-max rounded-[4px] ml-[8px]"
+                    >
+                      <h6 class="text-[11px] text-white underline">10% OFF</h6>
+                    </span>
+                  </div>
+                  <p class="text-[12px]">
+                    Ou em até <span class="font-bold">10x de R$ 7,90</span>
+                  </p>
+                </div>
+                <button
+                  class="bg-[#005CFF] w-[100%] mt-[16px] py-[10px] px-[24px] text-white rounded-[8px] font-semibold text-[14px]"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+            <div
+              class="swiper-slide border-[#dddddd] pt-[6px] px-[8px] rounded-[10px] border-[2px] flex flex-col"
+            >
+              <span class="relative">
+                <h4
+                  class="text-[10px] absolute left-[8px] top-[8px] bg-[#00264E] leading-[22px] px-[6px] py-[1px] rounded-[4px] text-white"
+                >
+                  NOVO
+                </h4>
+                <img
+                  class="w-[158px] h-[158px] md:w-[222px] md:h-[222px]"
+                  src="./images/image-produto.png"
+                />
+              </span>
+              <div class="mt-[16px] text-[#303030] w-[100%] h-[101px]">
+                <h3 class="text-[14px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+                <div class="">
+                  <div class="flex flex-row items-center h-[38px]">
+                    <span>
+                      <h5 class="text-[12px] line-through">R$ 100,00</h5>
+                      <h2 class="text-[16px] font-bold font-black">R$79,99</h2>
+                    </span>
+                    <span
+                      class="bg-[#5EC0BE] px-[8px] py-[2px] h-max rounded-[4px] ml-[8px]"
+                    >
+                      <h6 class="text-[11px] text-white underline">10% OFF</h6>
+                    </span>
+                  </div>
+                  <p class="text-[12px]">
+                    Ou em até <span class="font-bold">10x de R$ 7,90</span>
+                  </p>
+                </div>
+                <button
+                  class="bg-[#005CFF] w-[100%] mt-[16px] py-[10px] px-[24px] text-white rounded-[8px] font-semibold text-[14px]"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+            <div
+              class="swiper-slide border-[#dddddd] pt-[6px] px-[8px] rounded-[10px] border-[2px] flex flex-col"
+            >
+              <span class="relative">
+                <h4
+                  class="text-[10px] absolute left-[8px] top-[8px] bg-[#00264E] leading-[22px] px-[6px] py-[1px] rounded-[4px] text-white"
+                >
+                  NOVO
+                </h4>
+                <img
+                  class="w-[158px] h-[158px] md:w-[222px] md:h-[222px]"
+                  src="./images/image-produto.png"
+                />
+              </span>
+              <div class="mt-[16px] text-[#303030] w-[100%] h-[101px]">
+                <h3 class="text-[14px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+                <div class="">
+                  <div class="flex flex-row items-center h-[38px]">
+                    <span>
+                      <h5 class="text-[12px] line-through">R$ 100,00</h5>
+                      <h2 class="text-[16px] font-bold font-black">R$79,99</h2>
+                    </span>
+                    <span
+                      class="bg-[#5EC0BE] px-[8px] py-[2px] h-max rounded-[4px] ml-[8px]"
+                    >
+                      <h6 class="text-[11px] text-white underline">10% OFF</h6>
+                    </span>
+                  </div>
+                  <p class="text-[12px]">
+                    Ou em até <span class="font-bold">10x de R$ 7,90</span>
+                  </p>
+                </div>
+                <button
+                  class="bg-[#005CFF] w-[100%] mt-[16px] py-[10px] px-[24px] text-white rounded-[8px] font-semibold text-[14px]"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+            <div
+              class="swiper-slide border-[#dddddd] pt-[6px] px-[8px] rounded-[10px] border-[2px] flex flex-col"
+            >
+              <span class="relative">
+                <h4
+                  class="text-[10px] absolute left-[8px] top-[8px] bg-[#00264E] leading-[22px] px-[6px] py-[1px] rounded-[4px] text-white"
+                >
+                  NOVO
+                </h4>
+                <img
+                  class="w-[158px] h-[158px] md:w-[222px] md:h-[222px]"
+                  src="./images/image-produto.png"
+                />
+              </span>
+              <div class="mt-[16px] text-[#303030] w-[100%] h-[101px]">
+                <h3 class="text-[14px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+                <div class="">
+                  <div class="flex flex-row items-center h-[38px]">
+                    <span>
+                      <h5 class="text-[12px] line-through">R$ 100,00</h5>
+                      <h2 class="text-[16px] font-bold font-black">R$79,99</h2>
+                    </span>
+                    <span
+                      class="bg-[#5EC0BE] px-[8px] py-[2px] h-max rounded-[4px] ml-[8px]"
+                    >
+                      <h6 class="text-[11px] text-white underline">10% OFF</h6>
+                    </span>
+                  </div>
+                  <p class="text-[12px]">
+                    Ou em até <span class="font-bold">10x de R$ 7,90</span>
+                  </p>
+                </div>
+                <button
+                  class="bg-[#005CFF] w-[100%] mt-[16px] py-[10px] px-[24px] text-white rounded-[8px] font-semibold text-[14px]"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+            <div
+              class="swiper-slide border-[#dddddd] pt-[6px] px-[8px] rounded-[10px] border-[2px] flex flex-col"
+            >
+              <span class="relative">
+                <h4
+                  class="text-[10px] absolute left-[8px] top-[8px] bg-[#00264E] leading-[22px] px-[6px] py-[1px] rounded-[4px] text-white"
+                >
+                  NOVO
+                </h4>
+                <img
+                  class="w-[158px] h-[158px] md:w-[222px] md:h-[222px]"
+                  src="./images/image-produto.png"
+                />
+              </span>
+              <div class="mt-[16px] text-[#303030] w-[100%] h-[101px]">
+                <h3 class="text-[14px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+                <div class="">
+                  <div class="flex flex-row items-center h-[38px]">
+                    <span>
+                      <h5 class="text-[12px] line-through">R$ 100,00</h5>
+                      <h2 class="text-[16px] font-bold font-black">R$79,99</h2>
+                    </span>
+                    <span
+                      class="bg-[#5EC0BE] px-[8px] py-[2px] h-max rounded-[4px] ml-[8px]"
+                    >
+                      <h6 class="text-[11px] text-white underline">10% OFF</h6>
+                    </span>
+                  </div>
+                  <p class="text-[12px]">
+                    Ou em até <span class="font-bold">10x de R$ 7,90</span>
+                  </p>
+                </div>
+                <button
+                  class="bg-[#005CFF] w-[100%] mt-[16px] py-[10px] px-[24px] text-white rounded-[8px] font-semibold text-[14px]"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+            <div
+              class="swiper-slide border-[#dddddd] pt-[6px] px-[8px] rounded-[10px] border-[2px] flex flex-col"
+            >
+              <span class="relative">
+                <h4
+                  class="text-[10px] absolute left-[8px] top-[8px] bg-[#00264E] leading-[22px] px-[6px] py-[1px] rounded-[4px] text-white"
+                >
+                  NOVO
+                </h4>
+                <img
+                  class="w-[158px] h-[158px] md:w-[222px] md:h-[222px]"
+                  src="./images/image-produto.png"
+                />
+              </span>
+              <div class="mt-[16px] text-[#303030] w-[100%] h-[101px]">
+                <h3 class="text-[14px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+                <div class="">
+                  <div class="flex flex-row items-center h-[38px]">
+                    <span>
+                      <h5 class="text-[12px] line-through">R$ 100,00</h5>
+                      <h2 class="text-[16px] font-bold font-black">R$79,99</h2>
+                    </span>
+                    <span
+                      class="bg-[#5EC0BE] px-[8px] py-[2px] h-max rounded-[4px] ml-[8px]"
+                    >
+                      <h6 class="text-[11px] text-white underline">10% OFF</h6>
+                    </span>
+                  </div>
+                  <p class="text-[12px]">
+                    Ou em até <span class="font-bold">10x de R$ 7,90</span>
+                  </p>
+                </div>
+                <button
+                  class="bg-[#005CFF] w-[100%] mt-[16px] py-[10px] px-[24px] text-white rounded-[8px] font-semibold text-[14px]"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+            <div
+              class="swiper-slide border-[#dddddd] pt-[6px] px-[8px] rounded-[10px] border-[2px] flex flex-col"
+            >
+              <span class="relative">
+                <h4
+                  class="text-[10px] absolute left-[8px] top-[8px] bg-[#00264E] leading-[22px] px-[6px] py-[1px] rounded-[4px] text-white"
+                >
+                  NOVO
+                </h4>
+                <img
+                  class="w-[158px] h-[158px] md:w-[222px] md:h-[222px]"
+                  src="./images/image-produto.png"
+                />
+              </span>
+              <div class="mt-[16px] text-[#303030] w-[100%] h-[101px]">
+                <h3 class="text-[14px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+                <div class="">
+                  <div class="flex flex-row items-center h-[38px]">
+                    <span>
+                      <h5 class="text-[12px] line-through">R$ 100,00</h5>
+                      <h2 class="text-[16px] font-bold font-black">R$79,99</h2>
+                    </span>
+                    <span
+                      class="bg-[#5EC0BE] px-[8px] py-[2px] h-max rounded-[4px] ml-[8px]"
+                    >
+                      <h6 class="text-[11px] text-white underline">10% OFF</h6>
+                    </span>
+                  </div>
+                  <p class="text-[12px]">
+                    Ou em até <span class="font-bold">10x de R$ 7,90</span>
+                  </p>
+                </div>
+                <button
+                  class="bg-[#005CFF] w-[100%] mt-[16px] py-[10px] px-[24px] text-white rounded-[8px] font-semibold text-[14px]"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+            <div
+              class="swiper-slide border-[#dddddd] pt-[6px] px-[8px] rounded-[10px] border-[2px] flex flex-col"
+            >
+              <span class="relative">
+                <h4
+                  class="text-[10px] absolute left-[8px] top-[8px] bg-[#00264E] leading-[22px] px-[6px] py-[1px] rounded-[4px] text-white"
+                >
+                  NOVO
+                </h4>
+                <img
+                  class="w-[158px] h-[158px] md:w-[222px] md:h-[222px]"
+                  src="./images/image-produto.png"
+                />
+              </span>
+              <div class="mt-[16px] text-[#303030] w-[100%] h-[101px]">
+                <h3 class="text-[14px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+                <div class="">
+                  <div class="flex flex-row items-center h-[38px]">
+                    <span>
+                      <h5 class="text-[12px] line-through">R$ 100,00</h5>
+                      <h2 class="text-[16px] font-bold font-black">R$79,99</h2>
+                    </span>
+                    <span
+                      class="bg-[#5EC0BE] px-[8px] py-[2px] h-max rounded-[4px] ml-[8px]"
+                    >
+                      <h6 class="text-[11px] text-white underline">10% OFF</h6>
+                    </span>
+                  </div>
+                  <p class="text-[12px]">
+                    Ou em até <span class="font-bold">10x de R$ 7,90</span>
+                  </p>
+                </div>
+                <button
+                  class="bg-[#005CFF] w-[100%] mt-[16px] py-[10px] px-[24px] text-white rounded-[8px] font-semibold text-[14px]"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+            <div
+              class="swiper-slide border-[#dddddd] pt-[6px] px-[8px] rounded-[10px] border-[2px] flex flex-col"
+            >
+              <span class="relative">
+                <h4
+                  class="text-[10px] absolute left-[8px] top-[8px] bg-[#00264E] leading-[22px] px-[6px] py-[1px] rounded-[4px] text-white"
+                >
+                  NOVO
+                </h4>
+                <img
+                  class="w-[158px] h-[158px] md:w-[222px] md:h-[222px]"
+                  src="./images/image-produto.png"
+                />
+              </span>
+              <div class="mt-[16px] text-[#303030] w-[100%] h-[101px]">
+                <h3 class="text-[14px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+                <div class="">
+                  <div class="flex flex-row items-center h-[38px]">
+                    <span>
+                      <h5 class="text-[12px] line-through">R$ 100,00</h5>
+                      <h2 class="text-[16px] font-bold font-black">R$79,99</h2>
+                    </span>
+                    <span
+                      class="bg-[#5EC0BE] px-[8px] py-[2px] h-max rounded-[4px] ml-[8px]"
+                    >
+                      <h6 class="text-[11px] text-white underline">10% OFF</h6>
+                    </span>
+                  </div>
+                  <p class="text-[12px]">
+                    Ou em até <span class="font-bold">10x de R$ 7,90</span>
+                  </p>
+                </div>
+                <button
+                  class="bg-[#005CFF] w-[100%] mt-[16px] py-[10px] px-[24px] text-white rounded-[8px] font-semibold text-[14px]"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+            <div
+              class="swiper-slide border-[#dddddd] pt-[6px] px-[8px] rounded-[10px] border-[2px] flex flex-col"
+            >
+              <span class="relative">
+                <h4
+                  class="text-[10px] absolute left-[8px] top-[8px] bg-[#00264E] leading-[22px] px-[6px] py-[1px] rounded-[4px] text-white"
+                >
+                  NOVO
+                </h4>
+                <img
+                  class="w-[158px] h-[158px] md:w-[222px] md:h-[222px]"
+                  src="./images/image-produto.png"
+                />
+              </span>
+              <div class="mt-[16px] text-[#303030] w-[100%] h-[101px]">
+                <h3 class="text-[14px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+                <div class="">
+                  <div class="flex flex-row items-center h-[38px]">
+                    <span>
+                      <h5 class="text-[12px] line-through">R$ 100,00</h5>
+                      <h2 class="text-[16px] font-bold font-black">R$79,99</h2>
+                    </span>
+                    <span
+                      class="bg-[#5EC0BE] px-[8px] py-[2px] h-max rounded-[4px] ml-[8px]"
+                    >
+                      <h6 class="text-[11px] text-white underline">10% OFF</h6>
+                    </span>
+                  </div>
+                  <p class="text-[12px]">
+                    Ou em até <span class="font-bold">10x de R$ 7,90</span>
+                  </p>
+                </div>
+                <button
+                  class="bg-[#005CFF] w-[100%] mt-[16px] py-[10px] px-[24px] text-white rounded-[8px] font-semibold text-[14px]"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+          </div>
+          <button
+            id="slider-button-left"
+            class="swiper-button-prev group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !left-0 hover:bg-indigo-600"
+            data-carousel-prev
+          >
+            <svg
+              class="h-5 w-5 text-indigo-600 group-hover:text-white"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M10.0002 11.9999L6 7.99971L10.0025 3.99719"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button
+            id="slider-button-right"
+            class="swiper-button-next group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !right-0 hover:bg-indigo-600"
+            data-carousel-next
+          >
+            <svg
+              class="h-5 w-5 text-indigo-600 group-hover:text-white"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M5.99984 4.00012L10 8.00029L5.99748 12.0028"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <div class="md:flex md:flex-row md:items-center">
+        <img
+          src="./images/copo-capa.png"
+          class="w-[390px] md:w-[652px] h-[390px] md:h-[747px]"
+        />
+
+        <div
+          class="mt-[38px] mx-[24px] leading-[25px] tracking-wider grid gap-[18px] md:gap[22px] md:w-[487px] md:h-[536px]"
+        >
+          <h1 class="text-[24px] font-bold">LOREM IPSUM</h1>
+          <p class="text-[18px]">
+            Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+            finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras
+            efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+            lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
+            fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod
+            orci, auctor fringilla magna consequat interdum. Fusce sagittis elit
+            a libero commodo egestas efficitur id augue.
+          </p>
+          <p class="text-[18px]">
+            Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+            finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras
+            efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+            lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
+            fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod
+            orci, auctor fringilla magna consequat interdum. Fusce sagittis elit
+            a libero commodo egestas efficitur id augue.
+          </p>
+        </div>
+      </div>
+      <div
+        class="bg-[#DEDEDE] w-full md:w-screen flex justify-center items-center flex-col md:flex-row-reverse px-[20px] py-[28px] md:py-[50px]"
+      >
+        <img src="./images/banner-copo-2.png" class="w-[349px] md:w-[652px]" />
+        <div
+          class="mt-[38px] leading-[140%] tracking-[0.05em] grid gap-[18px] md:gap-[50px] md:w-[476px] text-[#4F4F4F] md:mr-[49px] text-[12px] md:text-[18px]"
+        >
+          <h1 class="text-[20px] md:text-[30px] font-bold text-center">
+            LOREM IPSUM
+          </h1>
+
+          <span class="flex flex-row items-center">
+            <img
+              src="./images/icon-loc.png"
+              class="w-[60px] h-[60px] md:w-[90px] md:h-[90px]"
+            />
+            <p class="ml-[14px] md:w-[360px]">
+              Aenean massa. Cum sociis natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus. Donec quam felis,
+              ultricies nec, pellentesque eu, pretium quis, sem.
+            </p>
+          </span>
+          <span class="flex flex-row items-center">
+            <img
+              src="./images/icon-loc.png"
+              class="w-[60px] h-[60px] md:w-[90px] md:h-[90px]"
+            />
+            <p class="ml-[14px] md:w-[360px]">
+              Aenean massa. Cum sociis natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus. Donec quam felis,
+              ultricies nec, pellentesque eu, pretium quis, sem.
+            </p>
+          </span>
+          <span class="flex flex-row items-center">
+            <img
+              src="./images/icon-loc.png"
+              class="w-[60px] h-[60px] md:w-[90px] md:h-[90px]"
+            />
+            <p class="ml-[14px] md:w-[360px]">
+              Aenean massa. Cum sociis natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus. Donec quam felis,
+              ultricies nec, pellentesque eu, pretium quis, sem.
+            </p>
+          </span>
+        </div>
+      </div>
+
+      <div class="md:flex md:flex-row md:items-center">
+        <img
+          src="./images/copo-capa.png"
+          class="w-[390px] md:w-[652px] h-[390px] md:h-[747px]"
+        />
+
+        <div
+          class="mt-[38px] mx-[24px] leading-[25px] tracking-wider grid gap-[18px] md:gap[22px] md:w-[487px] md:h-[536px]"
+        >
+          <h1 class="text-[24px] font-bold">LOREM IPSUM</h1>
+          <p class="text-[18px]">
+            Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+            finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras
+            efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+            lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
+            fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod
+            orci, auctor fringilla magna consequat interdum. Fusce sagittis elit
+            a libero commodo egestas efficitur id augue.
+          </p>
+          <p class="text-[18px]">
+            Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+            finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras
+            efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+            lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
+            fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod
+            orci, auctor fringilla magna consequat interdum. Fusce sagittis elit
+            a libero commodo egestas efficitur id augue.
+          </p>
+        </div>
+      </div>
+      <div class="w-full px-[16px] md:w-[1290px] overflow-hidden">
+        <div class="flex flex-row justify-between">
+          <h2 class="text-[16px] font-bold">Lançamentos</h2>
+          <a class="text-[14px] font-bold underline text-[#303030]">Ver mais</a>
+        </div>
+        <div
+          class="swiper centered-slide-carousel swiper-container relative mt-[16px]"
+        >
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide border-[#dddddd] pt-[6px] px-[8px] rounded-[10px] border-[2px] flex flex-col"
+            >
+              <span class="relative">
+                <h4
+                  class="text-[10px] absolute left-[0px] top-[0px] bg-[#00264E] leading-[22px] px-[6px] py-[1px] rounded-[4px] text-white"
+                >
+                  NOVO
+                </h4>
+                <img
+                  class="w-[158px] h-[158px] md:w-[222px] md:h-[222px]"
+                  src="./images/image-produto.png"
+                />
+              </span>
+              <div class="mt-[16px] text-[#303030] w-[100%] h-[101px]">
+                <h3 class="text-[14px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+                <div class="">
+                  <div class="flex flex-row items-center h-[38px]">
+                    <span>
+                      <h5 class="text-[12px] line-through">R$ 100,00</h5>
+                      <h2 class="text-[16px] font-bold font-black">R$79,99</h2>
+                    </span>
+                    <span
+                      class="bg-[#5EC0BE] px-[8px] py-[2px] h-max rounded-[4px] ml-[8px]"
+                    >
+                      <h6 class="text-[11px] text-white underline">10% OFF</h6>
+                    </span>
+                  </div>
+                  <p class="text-[12px]">
+                    Ou em até <span class="font-bold">10x de R$ 7,90</span>
+                  </p>
+                </div>
+                <button
+                  class="bg-[#005CFF] w-[100%] mt-[16px] py-[10px] px-[24px] text-white rounded-[8px] font-semibold text-[14px]"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+            <div
+              class="swiper-slide border-[#dddddd] pt-[6px] px-[8px] rounded-[10px] border-[2px] flex flex-col"
+            >
+              <span class="relative">
+                <h4
+                  class="text-[10px] absolute left-[8px] top-[8px] bg-[#00264E] leading-[22px] px-[6px] py-[1px] rounded-[4px] text-white"
+                >
+                  NOVO
+                </h4>
+                <img
+                  class="w-[158px] h-[158px] md:w-[222px] md:h-[222px]"
+                  src="./images/image-produto.png"
+                />
+              </span>
+              <div class="mt-[16px] text-[#303030] w-[100%] h-[101px]">
+                <h3 class="text-[14px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+                <div class="">
+                  <div class="flex flex-row items-center h-[38px]">
+                    <span>
+                      <h5 class="text-[12px] line-through">R$ 100,00</h5>
+                      <h2 class="text-[16px] font-bold font-black">R$79,99</h2>
+                    </span>
+                    <span
+                      class="bg-[#5EC0BE] px-[8px] py-[2px] h-max rounded-[4px] ml-[8px]"
+                    >
+                      <h6 class="text-[11px] text-white underline">10% OFF</h6>
+                    </span>
+                  </div>
+                  <p class="text-[12px]">
+                    Ou em até <span class="font-bold">10x de R$ 7,90</span>
+                  </p>
+                </div>
+                <button
+                  class="bg-[#005CFF] w-[100%] mt-[16px] py-[10px] px-[24px] text-white rounded-[8px] font-semibold text-[14px]"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+            <div
+              class="swiper-slide border-[#dddddd] pt-[6px] px-[8px] rounded-[10px] border-[2px] flex flex-col"
+            >
+              <span class="relative">
+                <h4
+                  class="text-[10px] absolute left-[8px] top-[8px] bg-[#00264E] leading-[22px] px-[6px] py-[1px] rounded-[4px] text-white"
+                >
+                  NOVO
+                </h4>
+                <img
+                  class="w-[158px] h-[158px] md:w-[222px] md:h-[222px]"
+                  src="./images/image-produto.png"
+                />
+              </span>
+              <div class="mt-[16px] text-[#303030] w-[100%] h-[101px]">
+                <h3 class="text-[14px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+                <div class="">
+                  <div class="flex flex-row items-center h-[38px]">
+                    <span>
+                      <h5 class="text-[12px] line-through">R$ 100,00</h5>
+                      <h2 class="text-[16px] font-bold font-black">R$79,99</h2>
+                    </span>
+                    <span
+                      class="bg-[#5EC0BE] px-[8px] py-[2px] h-max rounded-[4px] ml-[8px]"
+                    >
+                      <h6 class="text-[11px] text-white underline">10% OFF</h6>
+                    </span>
+                  </div>
+                  <p class="text-[12px]">
+                    Ou em até <span class="font-bold">10x de R$ 7,90</span>
+                  </p>
+                </div>
+                <button
+                  class="bg-[#005CFF] w-[100%] mt-[16px] py-[10px] px-[24px] text-white rounded-[8px] font-semibold text-[14px]"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+            <div
+              class="swiper-slide border-[#dddddd] pt-[6px] px-[8px] rounded-[10px] border-[2px] flex flex-col"
+            >
+              <span class="relative">
+                <h4
+                  class="text-[10px] absolute left-[8px] top-[8px] bg-[#00264E] leading-[22px] px-[6px] py-[1px] rounded-[4px] text-white"
+                >
+                  NOVO
+                </h4>
+                <img
+                  class="w-[158px] h-[158px] md:w-[222px] md:h-[222px]"
+                  src="./images/image-produto.png"
+                />
+              </span>
+              <div class="mt-[16px] text-[#303030] w-[100%] h-[101px]">
+                <h3 class="text-[14px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+                <div class="">
+                  <div class="flex flex-row items-center h-[38px]">
+                    <span>
+                      <h5 class="text-[12px] line-through">R$ 100,00</h5>
+                      <h2 class="text-[16px] font-bold font-black">R$79,99</h2>
+                    </span>
+                    <span
+                      class="bg-[#5EC0BE] px-[8px] py-[2px] h-max rounded-[4px] ml-[8px]"
+                    >
+                      <h6 class="text-[11px] text-white underline">10% OFF</h6>
+                    </span>
+                  </div>
+                  <p class="text-[12px]">
+                    Ou em até <span class="font-bold">10x de R$ 7,90</span>
+                  </p>
+                </div>
+                <button
+                  class="bg-[#005CFF] w-[100%] mt-[16px] py-[10px] px-[24px] text-white rounded-[8px] font-semibold text-[14px]"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+            <div
+              class="swiper-slide border-[#dddddd] pt-[6px] px-[8px] rounded-[10px] border-[2px] flex flex-col"
+            >
+              <span class="relative">
+                <h4
+                  class="text-[10px] absolute left-[8px] top-[8px] bg-[#00264E] leading-[22px] px-[6px] py-[1px] rounded-[4px] text-white"
+                >
+                  NOVO
+                </h4>
+                <img
+                  class="w-[158px] h-[158px] md:w-[222px] md:h-[222px]"
+                  src="./images/image-produto.png"
+                />
+              </span>
+              <div class="mt-[16px] text-[#303030] w-[100%] h-[101px]">
+                <h3 class="text-[14px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+                <div class="">
+                  <div class="flex flex-row items-center h-[38px]">
+                    <span>
+                      <h5 class="text-[12px] line-through">R$ 100,00</h5>
+                      <h2 class="text-[16px] font-bold font-black">R$79,99</h2>
+                    </span>
+                    <span
+                      class="bg-[#5EC0BE] px-[8px] py-[2px] h-max rounded-[4px] ml-[8px]"
+                    >
+                      <h6 class="text-[11px] text-white underline">10% OFF</h6>
+                    </span>
+                  </div>
+                  <p class="text-[12px]">
+                    Ou em até <span class="font-bold">10x de R$ 7,90</span>
+                  </p>
+                </div>
+                <button
+                  class="bg-[#005CFF] w-[100%] mt-[16px] py-[10px] px-[24px] text-white rounded-[8px] font-semibold text-[14px]"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+            <div
+              class="swiper-slide border-[#dddddd] pt-[6px] px-[8px] rounded-[10px] border-[2px] flex flex-col"
+            >
+              <span class="relative">
+                <h4
+                  class="text-[10px] absolute left-[8px] top-[8px] bg-[#00264E] leading-[22px] px-[6px] py-[1px] rounded-[4px] text-white"
+                >
+                  NOVO
+                </h4>
+                <img
+                  class="w-[158px] h-[158px] md:w-[222px] md:h-[222px]"
+                  src="./images/image-produto.png"
+                />
+              </span>
+              <div class="mt-[16px] text-[#303030] w-[100%] h-[101px]">
+                <h3 class="text-[14px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+                <div class="">
+                  <div class="flex flex-row items-center h-[38px]">
+                    <span>
+                      <h5 class="text-[12px] line-through">R$ 100,00</h5>
+                      <h2 class="text-[16px] font-bold font-black">R$79,99</h2>
+                    </span>
+                    <span
+                      class="bg-[#5EC0BE] px-[8px] py-[2px] h-max rounded-[4px] ml-[8px]"
+                    >
+                      <h6 class="text-[11px] text-white underline">10% OFF</h6>
+                    </span>
+                  </div>
+                  <p class="text-[12px]">
+                    Ou em até <span class="font-bold">10x de R$ 7,90</span>
+                  </p>
+                </div>
+                <button
+                  class="bg-[#005CFF] w-[100%] mt-[16px] py-[10px] px-[24px] text-white rounded-[8px] font-semibold text-[14px]"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+            <div
+              class="swiper-slide border-[#dddddd] pt-[6px] px-[8px] rounded-[10px] border-[2px] flex flex-col"
+            >
+              <span class="relative">
+                <h4
+                  class="text-[10px] absolute left-[8px] top-[8px] bg-[#00264E] leading-[22px] px-[6px] py-[1px] rounded-[4px] text-white"
+                >
+                  NOVO
+                </h4>
+                <img
+                  class="w-[158px] h-[158px] md:w-[222px] md:h-[222px]"
+                  src="./images/image-produto.png"
+                />
+              </span>
+              <div class="mt-[16px] text-[#303030] w-[100%] h-[101px]">
+                <h3 class="text-[14px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+                <div class="">
+                  <div class="flex flex-row items-center h-[38px]">
+                    <span>
+                      <h5 class="text-[12px] line-through">R$ 100,00</h5>
+                      <h2 class="text-[16px] font-bold font-black">R$79,99</h2>
+                    </span>
+                    <span
+                      class="bg-[#5EC0BE] px-[8px] py-[2px] h-max rounded-[4px] ml-[8px]"
+                    >
+                      <h6 class="text-[11px] text-white underline">10% OFF</h6>
+                    </span>
+                  </div>
+                  <p class="text-[12px]">
+                    Ou em até <span class="font-bold">10x de R$ 7,90</span>
+                  </p>
+                </div>
+                <button
+                  class="bg-[#005CFF] w-[100%] mt-[16px] py-[10px] px-[24px] text-white rounded-[8px] font-semibold text-[14px]"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+            <div
+              class="swiper-slide border-[#dddddd] pt-[6px] px-[8px] rounded-[10px] border-[2px] flex flex-col"
+            >
+              <span class="relative">
+                <h4
+                  class="text-[10px] absolute left-[8px] top-[8px] bg-[#00264E] leading-[22px] px-[6px] py-[1px] rounded-[4px] text-white"
+                >
+                  NOVO
+                </h4>
+                <img
+                  class="w-[158px] h-[158px] md:w-[222px] md:h-[222px]"
+                  src="./images/image-produto.png"
+                />
+              </span>
+              <div class="mt-[16px] text-[#303030] w-[100%] h-[101px]">
+                <h3 class="text-[14px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+                <div class="">
+                  <div class="flex flex-row items-center h-[38px]">
+                    <span>
+                      <h5 class="text-[12px] line-through">R$ 100,00</h5>
+                      <h2 class="text-[16px] font-bold font-black">R$79,99</h2>
+                    </span>
+                    <span
+                      class="bg-[#5EC0BE] px-[8px] py-[2px] h-max rounded-[4px] ml-[8px]"
+                    >
+                      <h6 class="text-[11px] text-white underline">10% OFF</h6>
+                    </span>
+                  </div>
+                  <p class="text-[12px]">
+                    Ou em até <span class="font-bold">10x de R$ 7,90</span>
+                  </p>
+                </div>
+                <button
+                  class="bg-[#005CFF] w-[100%] mt-[16px] py-[10px] px-[24px] text-white rounded-[8px] font-semibold text-[14px]"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+            <div
+              class="swiper-slide border-[#dddddd] pt-[6px] px-[8px] rounded-[10px] border-[2px] flex flex-col"
+            >
+              <span class="relative">
+                <h4
+                  class="text-[10px] absolute left-[8px] top-[8px] bg-[#00264E] leading-[22px] px-[6px] py-[1px] rounded-[4px] text-white"
+                >
+                  NOVO
+                </h4>
+                <img
+                  class="w-[158px] h-[158px] md:w-[222px] md:h-[222px]"
+                  src="./images/image-produto.png"
+                />
+              </span>
+              <div class="mt-[16px] text-[#303030] w-[100%] h-[101px]">
+                <h3 class="text-[14px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+                <div class="">
+                  <div class="flex flex-row items-center h-[38px]">
+                    <span>
+                      <h5 class="text-[12px] line-through">R$ 100,00</h5>
+                      <h2 class="text-[16px] font-bold font-black">R$79,99</h2>
+                    </span>
+                    <span
+                      class="bg-[#5EC0BE] px-[8px] py-[2px] h-max rounded-[4px] ml-[8px]"
+                    >
+                      <h6 class="text-[11px] text-white underline">10% OFF</h6>
+                    </span>
+                  </div>
+                  <p class="text-[12px]">
+                    Ou em até <span class="font-bold">10x de R$ 7,90</span>
+                  </p>
+                </div>
+                <button
+                  class="bg-[#005CFF] w-[100%] mt-[16px] py-[10px] px-[24px] text-white rounded-[8px] font-semibold text-[14px]"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+            <div
+              class="swiper-slide border-[#dddddd] pt-[6px] px-[8px] rounded-[10px] border-[2px] flex flex-col"
+            >
+              <span class="relative">
+                <h4
+                  class="text-[10px] absolute left-[8px] top-[8px] bg-[#00264E] leading-[22px] px-[6px] py-[1px] rounded-[4px] text-white"
+                >
+                  NOVO
+                </h4>
+                <img
+                  class="w-[158px] h-[158px] md:w-[222px] md:h-[222px]"
+                  src="./images/image-produto.png"
+                />
+              </span>
+              <div class="mt-[16px] text-[#303030] w-[100%] h-[101px]">
+                <h3 class="text-[14px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+                <div class="">
+                  <div class="flex flex-row items-center h-[38px]">
+                    <span>
+                      <h5 class="text-[12px] line-through">R$ 100,00</h5>
+                      <h2 class="text-[16px] font-bold font-black">R$79,99</h2>
+                    </span>
+                    <span
+                      class="bg-[#5EC0BE] px-[8px] py-[2px] h-max rounded-[4px] ml-[8px]"
+                    >
+                      <h6 class="text-[11px] text-white underline">10% OFF</h6>
+                    </span>
+                  </div>
+                  <p class="text-[12px]">
+                    Ou em até <span class="font-bold">10x de R$ 7,90</span>
+                  </p>
+                </div>
+                <button
+                  class="bg-[#005CFF] w-[100%] mt-[16px] py-[10px] px-[24px] text-white rounded-[8px] font-semibold text-[14px]"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+            <div
+              class="swiper-slide border-[#dddddd] pt-[6px] px-[8px] rounded-[10px] border-[2px] flex flex-col"
+            >
+              <span class="relative">
+                <h4
+                  class="text-[10px] absolute left-[8px] top-[8px] bg-[#00264E] leading-[22px] px-[6px] py-[1px] rounded-[4px] text-white"
+                >
+                  NOVO
+                </h4>
+                <img
+                  class="w-[158px] h-[158px] md:w-[222px] md:h-[222px]"
+                  src="./images/image-produto.png"
+                />
+              </span>
+              <div class="mt-[16px] text-[#303030] w-[100%] h-[101px]">
+                <h3 class="text-[14px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+                <div class="">
+                  <div class="flex flex-row items-center h-[38px]">
+                    <span>
+                      <h5 class="text-[12px] line-through">R$ 100,00</h5>
+                      <h2 class="text-[16px] font-bold font-black">R$79,99</h2>
+                    </span>
+                    <span
+                      class="bg-[#5EC0BE] px-[8px] py-[2px] h-max rounded-[4px] ml-[8px]"
+                    >
+                      <h6 class="text-[11px] text-white underline">10% OFF</h6>
+                    </span>
+                  </div>
+                  <p class="text-[12px]">
+                    Ou em até <span class="font-bold">10x de R$ 7,90</span>
+                  </p>
+                </div>
+                <button
+                  class="bg-[#005CFF] w-[100%] mt-[16px] py-[10px] px-[24px] text-white rounded-[8px] font-semibold text-[14px]"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+            <div
+              class="swiper-slide border-[#dddddd] pt-[6px] px-[8px] rounded-[10px] border-[2px] flex flex-col"
+            >
+              <span class="relative">
+                <h4
+                  class="text-[10px] absolute left-[8px] top-[8px] bg-[#00264E] leading-[22px] px-[6px] py-[1px] rounded-[4px] text-white"
+                >
+                  NOVO
+                </h4>
+                <img
+                  class="w-[158px] h-[158px] md:w-[222px] md:h-[222px]"
+                  src="./images/image-produto.png"
+                />
+              </span>
+              <div class="mt-[16px] text-[#303030] w-[100%] h-[101px]">
+                <h3 class="text-[14px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+                <div class="">
+                  <div class="flex flex-row items-center h-[38px]">
+                    <span>
+                      <h5 class="text-[12px] line-through">R$ 100,00</h5>
+                      <h2 class="text-[16px] font-bold font-black">R$79,99</h2>
+                    </span>
+                    <span
+                      class="bg-[#5EC0BE] px-[8px] py-[2px] h-max rounded-[4px] ml-[8px]"
+                    >
+                      <h6 class="text-[11px] text-white underline">10% OFF</h6>
+                    </span>
+                  </div>
+                  <p class="text-[12px]">
+                    Ou em até <span class="font-bold">10x de R$ 7,90</span>
+                  </p>
+                </div>
+                <button
+                  class="bg-[#005CFF] w-[100%] mt-[16px] py-[10px] px-[24px] text-white rounded-[8px] font-semibold text-[14px]"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+            <div
+              class="swiper-slide border-[#dddddd] pt-[6px] px-[8px] rounded-[10px] border-[2px] flex flex-col"
+            >
+              <span class="relative">
+                <h4
+                  class="text-[10px] absolute left-[8px] top-[8px] bg-[#00264E] leading-[22px] px-[6px] py-[1px] rounded-[4px] text-white"
+                >
+                  NOVO
+                </h4>
+                <img
+                  class="w-[158px] h-[158px] md:w-[222px] md:h-[222px]"
+                  src="./images/image-produto.png"
+                />
+              </span>
+              <div class="mt-[16px] text-[#303030] w-[100%] h-[101px]">
+                <h3 class="text-[14px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+                <div class="">
+                  <div class="flex flex-row items-center h-[38px]">
+                    <span>
+                      <h5 class="text-[12px] line-through">R$ 100,00</h5>
+                      <h2 class="text-[16px] font-bold font-black">R$79,99</h2>
+                    </span>
+                    <span
+                      class="bg-[#5EC0BE] px-[8px] py-[2px] h-max rounded-[4px] ml-[8px]"
+                    >
+                      <h6 class="text-[11px] text-white underline">10% OFF</h6>
+                    </span>
+                  </div>
+                  <p class="text-[12px]">
+                    Ou em até <span class="font-bold">10x de R$ 7,90</span>
+                  </p>
+                </div>
+                <button
+                  class="bg-[#005CFF] w-[100%] mt-[16px] py-[10px] px-[24px] text-white rounded-[8px] font-semibold text-[14px]"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+            <div
+              class="swiper-slide border-[#dddddd] pt-[6px] px-[8px] rounded-[10px] border-[2px] flex flex-col"
+            >
+              <span class="relative">
+                <h4
+                  class="text-[10px] absolute left-[8px] top-[8px] bg-[#00264E] leading-[22px] px-[6px] py-[1px] rounded-[4px] text-white"
+                >
+                  NOVO
+                </h4>
+                <img
+                  class="w-[158px] h-[158px] md:w-[222px] md:h-[222px]"
+                  src="./images/image-produto.png"
+                />
+              </span>
+              <div class="mt-[16px] text-[#303030] w-[100%] h-[101px]">
+                <h3 class="text-[14px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+                <div class="">
+                  <div class="flex flex-row items-center h-[38px]">
+                    <span>
+                      <h5 class="text-[12px] line-through">R$ 100,00</h5>
+                      <h2 class="text-[16px] font-bold font-black">R$79,99</h2>
+                    </span>
+                    <span
+                      class="bg-[#5EC0BE] px-[8px] py-[2px] h-max rounded-[4px] ml-[8px]"
+                    >
+                      <h6 class="text-[11px] text-white underline">10% OFF</h6>
+                    </span>
+                  </div>
+                  <p class="text-[12px]">
+                    Ou em até <span class="font-bold">10x de R$ 7,90</span>
+                  </p>
+                </div>
+                <button
+                  class="bg-[#005CFF] w-[100%] mt-[16px] py-[10px] px-[24px] text-white rounded-[8px] font-semibold text-[14px]"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+            <div
+              class="swiper-slide border-[#dddddd] pt-[6px] px-[8px] rounded-[10px] border-[2px] flex flex-col"
+            >
+              <span class="relative">
+                <h4
+                  class="text-[10px] absolute left-[8px] top-[8px] bg-[#00264E] leading-[22px] px-[6px] py-[1px] rounded-[4px] text-white"
+                >
+                  NOVO
+                </h4>
+                <img
+                  class="w-[158px] h-[158px] md:w-[222px] md:h-[222px]"
+                  src="./images/image-produto.png"
+                />
+              </span>
+              <div class="mt-[16px] text-[#303030] w-[100%] h-[101px]">
+                <h3 class="text-[14px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </h3>
+                <div class="">
+                  <div class="flex flex-row items-center h-[38px]">
+                    <span>
+                      <h5 class="text-[12px] line-through">R$ 100,00</h5>
+                      <h2 class="text-[16px] font-bold font-black">R$79,99</h2>
+                    </span>
+                    <span
+                      class="bg-[#5EC0BE] px-[8px] py-[2px] h-max rounded-[4px] ml-[8px]"
+                    >
+                      <h6 class="text-[11px] text-white underline">10% OFF</h6>
+                    </span>
+                  </div>
+                  <p class="text-[12px]">
+                    Ou em até <span class="font-bold">10x de R$ 7,90</span>
+                  </p>
+                </div>
+                <button
+                  class="bg-[#005CFF] w-[100%] mt-[16px] py-[10px] px-[24px] text-white rounded-[8px] font-semibold text-[14px]"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+          </div>
+          <button
+            id="slider-button-left"
+            class="swiper-button-prev group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !left-0 hover:bg-indigo-600"
+            data-carousel-prev
+          >
+            <svg
+              class="h-5 w-5 text-indigo-600 group-hover:text-white"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M10.0002 11.9999L6 7.99971L10.0025 3.99719"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button
+            id="slider-button-right"
+            class="swiper-button-next group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !right-0 hover:bg-indigo-600"
+            data-carousel-next
+          >
+            <svg
+              class="h-5 w-5 text-indigo-600 group-hover:text-white"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M5.99984 4.00012L10 8.00029L5.99748 12.0028"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div
+        class="bg-[url(./images/capa-contato.png)] bg-cover bg-center h-[450px] md:h-[660px] md:w-screen md:bg-cover flex items-center"
+      >
+        <div
+          class="bg-[#005CFF] w-full h-[75px] flex items-center md:justify-center px-[2px] mt-[16px]"
+        >
+          <p class="text-white text-[16px] text-center">
+            Entre em contato conosco e verifique a disponibilidade para sua
+            região!
+          </p>
+        </div>
+      </div>
+
+      <div class="font-['Nunito_Sans'] mx-[16px] grid gap-[16px] md:w-[1290px]">
+        <h3 class="font-bold text-[16px] md:text-[20px] text-center">
+          Cadastre-se na nossa <span class="text-blue-600">newsletter</span>
+        </h3>
+        <div
+          class="py-[38px] px-[16px] md:px-[115px] bg-[#F5F5F5] md:bg-[#DEDEDE] rounded-[8px]"
+        >
+          <form
+            action="#"
+            class="grid gap-[16px] md:flex md:gap-[24px] md:justify-between"
+          >
+            <input
+              type="text"
+              class="rounded-[8px] placeholder-[#303030] bg-white w-full md:w-[280px] md:h-[48px] py-[14px] pl-[25px]"
+              id="name"
+              name="name"
+              placeholder="Digite seu nome"
+            />
+            <input
+              type="text"
+              class="rounded-[8px] placeholder-[#303030] bg-white w-full md:w-[280px] md:h-[48px] py-[14px] pl-[25px]"
+              id="email"
+              name="email"
+              placeholder="Digite seu email"
+            />
+            <div class="flex items-center justify-center mx-[0px]">
+              <input
+                id="confirmPolicies"
+                name="confirmPolicies"
+                type="checkbox"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-none rounded-sm"
+              />
+              <label
+                for="default-checkbox"
+                class="ms-2 text-sm font-medium text-[#656565] text-[12px]"
+                >Estou de acordo com a
+                <span class="underline">Política de Privacidade</span></label
+              >
+            </div>
+            <input
+              type="submit"
+              class="bg-[#005CFF] rounded-[8px] text-white text-[16px] py-[14px] px-[24px]"
+              value="Cadastrar"
+            />
+          </form>
+        </div>
+      </div>
+    </main>
+    <!-- fim corpo da página -->
+    <footer
+      class="bg-[#F5F5F5] w-full mt-[40px] flex justify-center flex-col md:hidden"
+    >
+      <div
+        class="md:w-[1160px] grid gap-[48px] place-items-center md:flex py-[40px]"
+      >
+        <div class="flex flex-col w-fit">
+          <img src="./images/logo-avanti.png " class="w-[152px] mx-[21px]" />
+          <div class="flex flex-row justify-between mt-[40px]">
+            <img src="./icons/icon-instagram.png" class="w-[19px] h-[19px]" />
+            <img src="./icons/icon-facebook.png" class="w-[10px] h-[22px]" />
+            <img src="./icons/icon-youtube.png" class="w-[26px] h-[26px]" />
+            <img src="./icons/icon-tiktok.png" class="w-[18px] h-[21px]" />
+          </div>
+        </div>
+
+        <div class="w-full">
+          <ul>
+            <li>
+              <details>
+                <summary>
+                  <div>
+                    <h5>
+                      <span class="font-normal">&lt;h5> </span>Institucional
+                    </h5>
+                    <img src="./icons/icon-seta-baixo.png" />
+                  </div>
+                </summary>
+                <div class="mt-[16px] items-start w-full grid gap-[8px]">
+                  <p>&lt;h5> Sobre nós</p>
+                  <p>&lt;h5> Nossas lojas</p>
+                  <p>&lt;h5> Privacidade e segurança</p>
+                  <p>&lt;h5> Termos e condições</p>
+                </div>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary>
+                  <div>
+                    <h5>
+                      <span class="font-normal">&lt;h5> </span>Central de ajuda
+                    </h5>
+                    <img src="./icons/icon-seta-baixo.png" />
+                  </div>
+                </summary>
+                <div class="mt-[16px] items-start w-full grid gap-[8px]">
+                  <p>&lt;h5> Fale Conosco</p>
+                  <p>&lt;h5> Frete e Entrega</p>
+                  <p>&lt;h5> Trocas e Devoluções</p>
+                  <p>&lt;h5> Formas de Pagamento</p>
+                  <p>&lt;h5> FAQ</p>
+                </div>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary>
+                  <div>
+                    <h5>
+                      <span class="font-normal">&lt;h5> </span>Atendimento
+                    </h5>
+                    <img src="./icons/icon-seta-baixo.png" />
+                  </div>
+                </summary>
+                <div class="mt-[16px] items-start w-full grid gap-[8px]">
+                  <p>&lt;h5> <strong>Telefone:</strong> (00) 1234-5678</p>
+                  <p>&lt;h5> <strong>E-mail:</strong> exemplo@exemplo.com</p>
+                  <p>&lt;h5> <strong>Horário de atendimento:</strong></p>
+                  <p>Segunda a Sábado: 07h00 às 23h:00</p>
+                  <p>Domingos e Feriados: 07h00 às 21h:00</p>
+                </div>
+              </details>
+            </li>
+          </ul>
+        </div>
+        <img src="./icons/icon-tipos-pagamento.png" class="w-[289px]" />
+
+        <div class="w-[358px] grid gap-[40px] place-items-center">
+          <p class="text-center text-[12px]">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.
+          </p>
+          <img src="./images/capa-footer.png" class="w-[295px] h-[32px]" />
+        </div>
+      </div>
+    </footer>
+
+    <footer
+      class="hidden md:flex bg-[#F5F5F5] w-full mt-[40px] pt-[64px] justify-center items-center flex-col gap-[64px]"
+    >
+      <div class="md:w-[1160px] grid gap-[142px] place-items-center md:flex">
+        <div class="flex flex-col w-fit items-center">
+          <img src="./images/logo-avanti.png " class="w-[152px] mx-[21px]" />
+          <div class="flex flex-row md:w-[195px] justify-between mt-[40px]">
+            <img src="./icons/icon-instagram.png" class="w-[19px] h-[19px]" />
+            <img src="./icons/icon-facebook.png" class="w-[10px] h-[22px]" />
+            <img src="./icons/icon-youtube.png" class="w-[26px] h-[26px]" />
+            <img src="./icons/icon-tiktok.png" class="w-[18px] h-[21px]" />
+          </div>
+        </div>
+
+        <div class="text-[14px]">
+          <ul>
+            <li>
+              <h5><span class="font-normal">&lt;h5> </span>Institucional</h5>
+              <div class="mt-[16px] items-start w-full grid gap-[8px]">
+                <p>&lt;h5> Sobre nós</p>
+                <p>&lt;h5> Nossas lojas</p>
+                <p>&lt;h5> Privacidade e segurança</p>
+                <p>&lt;h5> Termos e condições</p>
+              </div>
+            </li>
+
+            <li>
+              <h5><span class="font-normal">&lt;h5> </span>Central de ajuda</h5>
+              <div class="mt-[16px] items-start w-full grid gap-[8px]">
+                <p>&lt;h5> Fale Conosco</p>
+                <p>&lt;h5> Frete e Entrega</p>
+                <p>&lt;h5> Trocas e Devoluções</p>
+                <p>&lt;h5> Formas de Pagamento</p>
+                <p>&lt;h5> FAQ</p>
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <h5><span class="font-normal">&lt;h5> </span>Atendimento</h5>
+              </div>
+              <div class="mt-[16px] items-start w-full grid gap-[8px]">
+                <p>&lt;h5> <strong>Telefone:</strong> (00) 1234-5678</p>
+                <p>&lt;h5> <strong>E-mail:</strong> exemplo@exemplo.com</p>
+                <p>&lt;h5> <strong>Horário de atendimento:</strong></p>
+                <p>Segunda a Sábado: 07h00 às 23h:00</p>
+                <p>Domingos e Feriados: 07h00 às 21h:00</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <img src="./icons/icons-tipos-pagamento-md.png" class="w-[545px]" />
+
+      <div class="w-full grid gap-[40px] place-items-center bg-white py-[40px]">
+        <p class="text-center text-[12px] w-[1075px]">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+          ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+          molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+          vero eros et accumsan et iusto odio dignissim qui blandit praesent
+          luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        </p>
+        <img src="./images/capa-footer.png" class="w-[295px] h-[32px]" />
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script>
+  var swiper = new Swiper(".centered-slide-carousel", {
+    centeredSlides: false,
+    paginationClickable: false,
+    loop: true,
+    spaceBetween: 17,
+    slidesPerView: 5,
+    slidesPerGroup: 5,
+    slideToClickedSlide: false,
+    pagination: {
+      el: ".centered-slide-carousel .swiper-pagination",
+      clickable: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      1028: {
+        slidesPerView: 5,
+        slidesPerGroup: 5,
+        spaceBetween: 17,
+      },
+      990: {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        spaceBetween: 5,
+      },
+      390: {
+        centeredSlides: true,
+        slidesPerView: 2,
+        slidesPerGroup: 1,
+        spaceBetween: 5,
+
+        navigation: {
+          nextEl: "",
+          prevEl: "",
+        },
+      },
+    },
+  });
+
+  function pesquisar() {
+    const input = document.getElementById("pesquisa");
+    const historico = document.getElementById("historicoPesquisa");
+    const pesquisa = input.value;
+
+    if (pesquisa.length > 0) {
+      const listaHistorico = localStorage.getItem("historicoPesquisas")
+        ? JSON.parse(localStorage.getItem("historicoPesquisas"))
+        : [];
+
+      if (!listaHistorico.includes(pesquisa)) {
+        listaHistorico.unshift(pesquisa);
+        localStorage.setItem(
+          "historicoPesquisas",
+          JSON.stringify(listaHistorico)
+        );
+      } else {
+        listaHistorico.splice(listaHistorico.indexOf(pesquisa), 1);
+        listaHistorico.unshift(pesquisa);
+        localStorage.setItem(
+          "historicoPesquisas",
+          JSON.stringify(listaHistorico)
+        );
+      }
+
+      historico.innerHTML = "";
+      listaHistorico.forEach((item) => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        historico.appendChild(li);
+      });
+
+      input.value = "";
+    } else {
+      const listaHistorico = localStorage.getItem("historicoPesquisas")
+        ? JSON.parse(localStorage.getItem("historicoPesquisas"))
+        : [];
+      historico.innerHTML = "";
+      listaHistorico.forEach((item) => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        li.setAttribute("onclick", `completarInput('${item}')`);
+        historico.appendChild(li);
+
+        input.value = "";
+      });
+    }
+  }
+
+  function completarInput(item) {
+    document.getElementById("pesquisa").value = item;
+  }
+
+  window.onload = function () {
+    pesquisar();
+  };
+</script>
