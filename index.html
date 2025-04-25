@@ -2268,6 +2268,7 @@
 
   function pesquisar() {
     const input = document.getElementById("pesquisa");
+    document.getElemen;
     const historico = document.getElementById("historicoPesquisa");
     const pesquisa = input.value;
 
@@ -2294,7 +2295,11 @@
       historico.innerHTML = "";
       listaHistorico.forEach((item) => {
         const li = document.createElement("li");
-        li.textContent = item;
+
+        item === input.value
+          ? (li.textContent = `Você buscou por: '${item}'`)
+          : (li.textContent = item);
+        li.setAttribute("onclick", `completarInput('${item}')`);
         historico.appendChild(li);
       });
 
